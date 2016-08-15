@@ -1,0 +1,32 @@
+{
+	"shoot_interval_minutes": 1,
+	"image_width": 1600,
+	"image_height": 1200,
+	"camera_params": {
+		"--timeout": 1,
+		"--brightness": 50,
+		"--quality": 90,
+		"--hflip": null
+	},
+	"storages": [
+		{
+			"type": "local",
+			"path": "/usr/src/rpi"
+		},
+		{
+			"type": "smtp",
+			"smtp_recipients": "recipient1@email1.com,recipient2@email2.com",
+			"smtp_email": "sender-address@gmail.com",
+			"smtp_passwd": "sender-password1234",
+			"smtp_server": "smtp.gmail.com:587"
+		},
+		{
+			"type": "dropbox",
+			"path": "/path/in/dropbox",
+			"dropbox_key": "__app_key__",
+			"dropbox_secret": "__app_secret__",
+			"dropbox_token": "__app_token__"
+		}
+	],
+	"is_verbose": true
+}
